@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Welcome to Tool Box Gamez</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Nunito', sans-serif;
+            background-color: #f4f4f7;
+            margin: 0;
+            padding: 0;
+        }
+
+        .email-wrapper {
+            width: 100%;
+            padding: 40px 0;
+        }
+
+        .email-container {
+            max-width: 600px;
+            margin: auto;
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+            overflow: hidden;
+        }
+
+        .logo {
+            text-align: center;
+            padding: 20px 0 0 0;
+            background-color: #ffffff;
+        }
+
+        .logo img {
+            max-height: 60px;
+        }
+
+        .header {
+            background-color: #FFAA01;
+            color: #000000;
+            padding: 30px 20px;
+            text-align: center;
+        }
+
+        .header h1 {
+            margin: 0;
+            font-size: 24px;
+        }
+
+        .body {
+            padding: 30px;
+            color: #333;
+        }
+
+        .body h2 {
+            font-size: 20px;
+            margin-top: 0;
+        }
+
+        .info-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+
+        .info-table td {
+            padding: 8px 0;
+            font-size: 16px;
+        }
+
+        .info-table td:first-child {
+            font-weight: 600;
+            color: #555;
+            width: 140px;
+        }
+
+        .footer {
+            text-align: center;
+            font-size: 12px;
+            color: #999;
+            padding: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="email-wrapper">
+        <div class="email-container">
+            <div class="logo">
+                <img src="" alt="Tool Box Gamez Logo" />
+            </div>
+            <div class="header">
+                <h1>Welcome to Tool Box Gamez</h1>
+            </div>
+            <div class="body">
+                <h2>Hi <%= employee %>,</h2>
+                <p>Welcome to <strong>Tool Box Gamez</strong>! We’re thrilled to have you onboard. 🕹️</p>
+                <p>You’ve been added to our platform by <strong>
+                        <%= manager %>
+                    </strong>. Below are your login credentials and account details:</p>
+
+                <table class="info-table">
+                    <tr>
+                        <td>Email:</td>
+                        <td>
+                            <%= email %>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Password:</td>
+                        <td>
+                            <%= password %>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Designation:</td>
+                        <td>
+                            <%= designation %>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Department:</td>
+                        <td>
+                            <%= department %>
+                        </td>
+                    </tr>
+                </table>
+
+                <p>Please keep this information safe and secure.</p>
+                <p>If you have any questions or need help getting started, don’t hesitate to reach out.</p>
+
+                <p>Game on!<br>The Tool Box Gamez Team</p>
+            </div>
+            <div class="footer">
+                &copy; <%= new Date().getFullYear() %> Tool Box Gamez. All rights reserved.
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
